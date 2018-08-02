@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <StackLayout Margin="0,50">
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Nombre"
+                   VerticalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="18"/>
+            <Entry
+                x:Name="UserName"
+                Placeholder="Nombre"
+                Keyboard="Text"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Apellido"
+                   VerticalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="18"/>
+            <Entry
+                x:Name="UserLastName"
+                Placeholder="Apellido"
+                Keyboard="Text"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Email"
+                   VerticalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="18"/>
+            <Entry
+                x:Name="UserEmail"
+                Placeholder="email"
+                Keyboard="Email"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Telefono"
+                   VerticalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="18"/>
+            <Entry
+                x:Name="UserCelular"
+                Placeholder="Nombre"
+                Keyboard="Telephone"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <Button 
+            x:Name="ClienteBtf"
+            Text="Continuar"
+            BorderRadius="10"
+            BorderWidth="1"
+            BorderColor="Black"
+            TextColor="White"
+            Margin="30,0,30,0"
+            BackgroundColor="Navy"
+            Clicked="Continue_Tapped"/>
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</ContentPage>
